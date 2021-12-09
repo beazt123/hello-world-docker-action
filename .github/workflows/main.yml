@@ -10,7 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Hello world action step
+<<<<<<< HEAD
         uses: ./actions/greet # Uses an action in the directory
+=======
+        uses: ./ # Uses an action in the root directory
+>>>>>>> 8fbd9cc55362024e6337dc918f05c30af5f2266c
         id: hello
         with:
           who-to-greet: 'Mona the Octocat'
